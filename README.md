@@ -1,3 +1,3 @@
 # Kokoa Clone
 
-Clone project with HTML & CSS
+Clone project with HTML & CSS!
