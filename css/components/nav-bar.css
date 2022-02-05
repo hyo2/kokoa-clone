@@ -1,0 +1,52 @@
+.nav {
+  position: fixed;
+  bottom: 0; /* nav-bar 아래에 고정*/
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box; /*padding 준 거 신경X. box사이즈(content가 보일 부분) 늘리지 말 것*/
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: #2e363e;
+  position: relative;
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  /* 얘는 span이라 너비, 높이 적용X 따라서 적용시키기 위해 block 적용 */
+  /* display: block;  */
+  /* 사각형을 원으로 만들고 싶다면 너비의 반을 써주면 됨 */
+  border-radius: 15px;
+
+  /* 1을 가운데 오게 하기 */
+  /* block으로 했는데 flex를 하면 in-line에서 block으로 바뀌는 것 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-weight: 600;
+
+  /*아이콘 위에 오게 하기*/
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+.nav__notiellipsis {
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px;
+
+  left: 35px;
+  bottom: 27px;
+}
